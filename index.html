@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akshat — BTech Student & Developer</title>
+  <meta name="description" content="Portfolio of Akshat, a BTech student building for the web, AI and everything in between." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#home" class="logo">akshat<span>.</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact" class="btn btn-sm">Let's talk</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="eyebrow reveal">Hello, world — I'm</p>
+        <h1 class="hero-title reveal">Akshat<span class="dot">.</span></h1>
+        <p class="hero-sub reveal">BTech student &amp; developer crafting
+          <span class="typed" data-words='["fast web apps","clean interfaces","ML experiments","things that ship"]'></span><span class="caret">|</span>
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn">See my work</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="about-media reveal from-left">
+        <div class="frame">
+          <img src="https://picsum.photos/seed/akshat-portrait/600/720" alt="Portrait placeholder" loading="lazy" />
+        </div>
+        <div class="badge float">🎓 BTech · CSE</div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag reveal">01 — About</p>
+        <h2 class="reveal">Curious by default,<br /><span class="grad">builder by choice.</span></h2>
+        <p class="reveal">I'm Akshat, a Computer Science undergrad who loves turning ideas into things people can click on. Most days you'll find me shipping side projects, breaking them, and learning why — across frontend, backend and a growing pile of machine-learning notebooks.</p>
+        <p class="reveal">I care about fast, accessible interfaces and code that's a pleasure to read. Currently looking for internships where I can learn from great engineers and ship real work.</p>
+        <div class="stats">
+          <div class="stat reveal"><strong data-count="15">0</strong><span>Projects built</span></div>
+          <div class="stat reveal"><strong data-count="6">0</strong><span>Hackathons</span></div>
+          <div class="stat reveal"><strong data-count="400">0</strong><span>DSA problems</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <p class="section-tag reveal">02 — Toolkit</p>
+      <h2 class="reveal">Things I <span class="grad">work with</span></h2>
+      <div class="skills-grid">
+        <article class="skill-card reveal tilt">
+          <div class="skill-icon c1">&lt;/&gt;</div>
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, React, Tailwind, Three.js</p>
+        </article>
+        <article class="skill-card reveal tilt">
+          <div class="skill-icon c2">⚙</div>
+          <h3>Backend</h3>
+          <p>Node.js, Express, Python, Flask, REST APIs</p>
+        </article>
+        <article class="skill-card reveal tilt">
+          <div class="skill-icon c3">◆</div>
+          <h3>Data &amp; ML</h3>
+          <p>NumPy, Pandas, scikit-learn, PyTorch basics</p>
+        </article>
+        <article class="skill-card reveal tilt">
+          <div class="skill-icon c1">⛁</div>
+          <h3>Databases</h3>
+          <p>MySQL, PostgreSQL, MongoDB, Firebase</p>
+        </article>
+        <article class="skill-card reveal tilt">
+          <div class="skill-icon c2">⎇</div>
+          <h3>Tools</h3>
+          <p>Git, GitHub, Linux, Docker, VS Code, Figma</p>
+        </article>
+        <article class="skill-card reveal tilt">
+          <div class="skill-icon c3">∑</div>
+          <h3>Core CS</h3>
+          <p>DSA in C++, OOP, DBMS, OS, Computer Networks</p>
+        </article>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>JavaScript</span><span>React</span><span>Python</span><span>C++</span><span>Node.js</span><span>Three.js</span><span>SQL</span><span>Git</span><span>Docker</span><span>PyTorch</span>
+          <span>JavaScript</span><span>React</span><span>Python</span><span>C++</span><span>Node.js</span><span>Three.js</span><span>SQL</span><span>Git</span><span>Docker</span><span>PyTorch</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <p class="section-tag reveal">03 — Selected work</p>
+      <h2 class="reveal">Projects I'm <span class="grad">proud of</span></h2>
+      <div class="filters reveal" role="tablist">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="ml">ML</button>
+        <button class="filter" data-filter="tools">Tools</button>
+      </div>
+      <div class="projects-grid">
+        <article class="project reveal" data-cat="web">
+          <div class="project-img"><img src="https://picsum.photos/seed/campus-hub/800/560" alt="Campus Hub preview" loading="lazy" /></div>
+          <div class="project-body">
+            <div class="tags"><span>React</span><span>Firebase</span></div>
+            <h3>Campus Hub</h3>
+            <p>A one-stop app for timetables, notices and lost-and-found, used by students across my department.</p>
+            <a href="#" class="link">View project →</a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="ml">
+          <div class="project-img"><img src="https://picsum.photos/seed/crop-vision/800/560" alt="CropVision preview" loading="lazy" /></div>
+          <div class="project-body">
+            <div class="tags"><span>PyTorch</span><span>Flask</span></div>
+            <h3>CropVision</h3>
+            <p>A CNN that flags common leaf diseases from a phone photo, wrapped in a lightweight web API.</p>
+            <a href="#" class="link">View project →</a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="tools">
+          <div class="project-img"><img src="https://picsum.photos/seed/dev-cli/800/560" alt="DevNotes CLI preview" loading="lazy" /></div>
+          <div class="project-body">
+            <div class="tags"><span>Node.js</span><span>CLI</span></div>
+            <h3>DevNotes CLI</h3>
+            <p>A tiny terminal tool to capture, tag and search coding notes without leaving the shell.</p>
+            <a href="#" class="link">View project →</a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="web">
+          <div class="project-img"><img src="https://picsum.photos/seed/expense-split/800/560" alt="SplitEase preview" loading="lazy" /></div>
+          <div class="project-body">
+            <div class="tags"><span>Express</span><span>MongoDB</span></div>
+            <h3>SplitEase</h3>
+            <p>Group expense splitting for hostel trips, with settle-up suggestions that minimise transfers.</p>
+            <a href="#" class="link">View project →</a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="ml">
+          <div class="project-img"><img src="https://picsum.photos/seed/sentiment-lab/800/560" alt="Sentiment Lab preview" loading="lazy" /></div>
+          <div class="project-body">
+            <div class="tags"><span>Python</span><span>NLP</span></div>
+            <h3>Sentiment Lab</h3>
+            <p>Comparing classic and transformer models on Hinglish product reviews, with an interactive dashboard.</p>
+            <a href="#" class="link">View project →</a>
+          </div>
+        </article>
+        <article class="project reveal" data-cat="tools">
+          <div class="project-img"><img src="https://picsum.photos/seed/algo-viz/800/560" alt="AlgoViz preview" loading="lazy" /></div>
+          <div class="project-body">
+            <div class="tags"><span>JavaScript</span><span>Canvas</span></div>
+            <h3>AlgoViz</h3>
+            <p>Step-through visualisations of sorting and graph algorithms, built to help juniors prep for exams.</p>
+            <a href="#" class="link">View project →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section id="journey" class="section">
+      <p class="section-tag reveal">04 — Journey</p>
+      <h2 class="reveal">The road <span class="grad">so far</span></h2>
+      <ol class="timeline">
+        <li class="reveal from-left"><span class="when">2026</span><h3>Open-source contributor</h3><p>First merged PRs to community projects; learning how large codebases are run.</p></li>
+        <li class="reveal from-right"><span class="when">2025</span><h3>Hackathon finalist</h3><p>Built CropVision in 36 hours with a team of four and made the national finals.</p></li>
+        <li class="reveal from-left"><span class="when">2024</span><h3>Started BTech, CSE</h3><p>Dove into DSA, joined the coding club and shipped my first full-stack app.</p></li>
+        <li class="reveal from-right"><span class="when">2023</span><h3>Hello, JavaScript</h3><p>Wrote my first web page and couldn't stop. The rest is commit history.</p></li>
+      </ol>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery-section">
+      <div class="gallery">
+        <img class="reveal" src="https://picsum.photos/seed/ak-g1/600/800" alt="" loading="lazy" />
+        <img class="reveal" src="https://picsum.photos/seed/ak-g2/600/400" alt="" loading="lazy" />
+        <img class="reveal" src="https://picsum.photos/seed/ak-g3/600/600" alt="" loading="lazy" />
+        <img class="reveal" src="https://picsum.photos/seed/ak-g4/600/800" alt="" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="contact-card reveal">
+        <p class="section-tag">05 — Contact</p>
+        <h2>Let's build something <span class="grad">together.</span></h2>
+        <p>Open to internships, collaborations and good conversations about tech.</p>
+        <form class="contact-form" onsubmit="return false;">
+          <input type="text" placeholder="Your name" aria-label="Your name" required />
+          <input type="email" placeholder="Your email" aria-label="Your email" required />
+          <textarea rows="4" placeholder="Say hello…" aria-label="Message" required></textarea>
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-note" role="status"></p>
+        </form>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Akshat · Built with plain HTML, CSS &amp; JS</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
